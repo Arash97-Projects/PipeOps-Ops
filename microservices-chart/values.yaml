@@ -1,14 +1,12 @@
 auth:
-  image: auth-service:latest
+  image: arashcloud/auth-service:latest
   port: 8001
 
 tasks:
-  image: tasks-service:latest
+  image: arashcloud/tasks-service:latest
   port: 8002
 
 frontend:
-  image: frontend:latest
+  image: arashcloud/frontend:latest
   port: 8000
 
-ingress:
-  host: micro.local
