@@ -15,6 +15,6 @@ spec:
       containers:
         - name: auth-service
           image: {{ .Values.auth.image }}
-          imagePullPolicy: always
+          imagePullPolicy: Always
           ports:
             - containerPort: {{ .Values.auth.port }}

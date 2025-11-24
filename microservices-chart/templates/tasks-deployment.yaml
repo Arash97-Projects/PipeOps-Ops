@@ -16,7 +16,7 @@ spec:
       containers:
         - name: tasks-service
           image: {{ .Values.tasks.image }}
-          imagePullPolicy: always
+          imagePullPolicy: Always
           ports:
             - containerPort: {{ .Values.tasks.port }}
 
